@@ -28,10 +28,6 @@ import {
   moveSectionInForm,
 } from "lib/redux/resumeSlice";
 
-/**
- * BaseForm is the bare bone form, i.e. just the outline with no title and no control buttons.
- * ProfileForm uses this to compose its outline.
- */
 export const BaseForm = ({
   children,
   className,

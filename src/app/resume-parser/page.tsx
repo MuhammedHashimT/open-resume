@@ -8,30 +8,14 @@ import { extractResumeFromSections } from "lib/parse-resume-from-pdf/extract-res
 import { ResumeDropzone } from "components/ResumeDropzone";
 import { cx } from "lib/cx";
 import { Heading, Link, Paragraph } from "components/documentation";
-import { ResumeTable } from "resume-parser/ResumeTable";
 import { FlexboxSpacer } from "components/FlexboxSpacer";
-import { ResumeParserAlgorithmArticle } from "resume-parser/ResumeParserAlgorithmArticle";
 
 const RESUME_EXAMPLES = [
   {
     fileUrl: "resume-example/laverne-resume.pdf",
-    description: (
-      <span>
-        Borrowed from University of La Verne Career Center -{" "}
-        <Link href="https://laverne.edu/careers/wp-content/uploads/sites/15/2010/12/Undergraduate-Student-Resume-Examples.pdf">
-          Link
-        </Link>
-      </span>
-    ),
   },
   {
     fileUrl: "resume-example/openresume-resume.pdf",
-    description: (
-      <span>
-        Created with OpenResume resume builder -{" "}
-        <Link href="/resume-builder">Link</Link>
-      </span>
-    ),
   },
 ];
 
@@ -92,7 +76,6 @@ export default function ResumeParser() {
                 >
                   <h1 className="font-semibold">Resume Example {idx + 1}</h1>
                   <p className="mt-2 text-sm text-gray-500">
-                    {example.description}
                   </p>
                 </article>
               ))}
@@ -114,15 +97,7 @@ export default function ResumeParser() {
                 playgroundView={true}
               />
             </div>
-            <Heading level={2} className="!mt-[1.2em]">
-              Resume Parsing Results
-            </Heading>
-            <ResumeTable resume={resume} />
-            <ResumeParserAlgorithmArticle
-              textItems={textItems}
-              lines={lines}
-              sections={sections}
-            />
+           
             <div className="pt-24" />
           </section>
         </div>

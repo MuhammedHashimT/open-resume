@@ -2,14 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
-/**
- * A simple Tooltip component that shows tooltip text center below children on hover and on focus
- *
- * @example
- * <Tooltip text="Tooltip Text">
- *   <div>Hello</div>
- * </Tooltip>
- */
 export const Tooltip = ({
   text,
   children,

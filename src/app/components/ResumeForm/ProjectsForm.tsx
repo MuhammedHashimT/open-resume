@@ -40,7 +40,7 @@ export const ProjectsForm = () => {
             <Input
               name="project"
               label="Project Name"
-              placeholder="OpenResume"
+              placeholder="Farrago"
               value={project}
               onChange={handleProjectChange}
               labelClassName="col-span-4"
@@ -48,7 +48,7 @@ export const ProjectsForm = () => {
             <Input
               name="date"
               label="Date"
-              placeholder="Winter 2022"
+              placeholder="Jan 2022"
               value={date}
               onChange={handleProjectChange}
               labelClassName="col-span-2"
